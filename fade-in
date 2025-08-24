@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Ad</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #eee;
+    }
+
+    .banner {
+      width: 300px;
+      height: 250px;
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .banner h2 {
+      margin: 10px 0;
+    }
+
+    .cta {
+      background: #fff;
+      color: #ee0979;
+      padding: 8px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: all 0.3s;
+    }
+
+    .cta:hover {
+      background: #ff6a00;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h2>🔥 Limited Offer!</h2>
+    <p>Get your campaign<br> up & running today</p>
+    <a href="#" class="cta">Start Now</a>
+  </div>
+</body>
+</html>
