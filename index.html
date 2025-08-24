@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Creative Ad</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f5f5;
+    }
+
+    .banner {
+      width: 728px;
+      height: 90px;
+      background: linear-gradient(135deg, #007bff, #00c4ff);
+      border-radius: 10px;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .text {
+      font-size: 20px;
+      font-weight: bold;
+      animation: slideIn 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-20px); opacity: 0.6; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .cta {
+      background: #ffcc00;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      background: #ffaa00;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="text">Boost Your Brand 🚀</div>
+    <a href="#" class="cta">Learn More</a>
+  </div>
+</body>
+  </html>
