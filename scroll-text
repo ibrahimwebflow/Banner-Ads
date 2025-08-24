@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyscraper Ad</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fafafa;
+    }
+
+    .banner {
+      width: 160px;
+      height: 600px;
+      background: linear-gradient(180deg, #11998e, #38ef7d);
+      border-radius: 12px;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .scrolling-text {
+      animation: scrollUp 6s linear infinite;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    @keyframes scrollUp {
+      0% { transform: translateY(100px); opacity: 0; }
+      20% { transform: translateY(0); opacity: 1; }
+      80% { transform: translateY(-50px); opacity: 1; }
+      100% { transform: translateY(-100px); opacity: 0; }
+    }
+
+    .cta {
+      background: #fff;
+      color: #11998e;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .cta:hover {
+      background: #38ef7d;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="scrolling-text">Grow Your Business</div>
+    <div class="scrolling-text">Reach More Clients</div>
+    <div class="scrolling-text">Boost ROI 🚀</div>
+    <a href="#" class="cta">Learn More</a>
+  </div>
+</body>
+</html>
